@@ -30,13 +30,10 @@ class Graph
     void setEdge(int);
     void addVertex(int);
     bool addEdge(int, int);
-    void BFS(int);
     bool isPlanar();
-    bool isThreeVertCycle();
     bool corol1_check();
     bool K5_Check();
     bool K33_Check();
-    
     bool K33_Connect_Check(int, int, int, int, int, int);
     /*
      * We will have a typical graph structure, but here is where we deviate.
@@ -160,7 +157,7 @@ bool Graph::K33_Check()
       for(int i3 = i2 + 1; i3 <= tot_verts - 3; i3++) {
 	for(int i4 = i3 + 1; i4 <= tot_verts - 2; i4++) {
 	  for(int i5 = i4 + 1; i5 <= tot_verts - 1; i5++) {
-	    for(int i6 = i5 + 1; i6 < tot_verts; i6++) {
+	    for(int i6 = i5 + 1; i6 <= tot_verts; i6++) {
 	      if(K33_Connect_Check(i1, i2, i3, i4, i5, i6)) { //calls a connect check
 		return true;
 	      }
