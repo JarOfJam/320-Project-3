@@ -2,7 +2,7 @@
  * Logan Stuchlik & Jordan Welch
  * Project 3 - Planar Graphs and Algorithms
  * Cosc 320
- * Pretend We started before Novemeber 30th in the year 2019
+ * Dec 11, 2019
  */
 
 #include <iostream>
